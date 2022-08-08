@@ -10,7 +10,7 @@ class Student extends Component
                         <div className="col-md-12">
                             <div className="card">
                                 <div className="card-header">
-                                       <h4>Students Data
+                                       <h4> Add Students 
                                             <Link to={'add-student'} className="btn btn-primary btn-sm float-end">Add Student</Link>
                                        </h4>
                                 </div>
