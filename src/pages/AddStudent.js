@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import {Link} from "react-router-dom";
 
-class Student extends Component
+class AddStudent extends Component
 {
        render(){
             return(
@@ -11,11 +11,15 @@ class Student extends Component
                             <div className="card">
                                 <div className="card-header">
                                        <h4> Add Students 
-                                            <Link to={'add-student'} className="btn btn-primary btn-sm float-end">Add Student</Link>
+                                            <Link to={'/'} className="btn btn-primary btn-sm float-end">Back</Link>
                                        </h4>
                                 </div>
                                 <div className="card-body">
-
+                                      <form>
+                                          <div>
+                                            
+                                          </div>
+                                      </form>
                                 </div>
                             </div>
                         </div>
@@ -24,4 +28,4 @@ class Student extends Component
             );
         }
 }
-export default Student;
+export default AddStudent;
