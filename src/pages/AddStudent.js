@@ -2,7 +2,13 @@ import React,{Component} from "react";
 import {Link} from "react-router-dom";
 
 class AddStudent extends Component
-{
+{      
+    state = {
+        name: '',
+        course: '',
+        mail: '',
+        phone: ''
+    }
        render(){
             return(
                <div className="container">
