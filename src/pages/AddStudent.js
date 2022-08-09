@@ -16,8 +16,21 @@ class AddStudent extends Component
                                 </div>
                                 <div className="card-body">
                                       <form>
-                                          <div>
-                                            
+                                          <div className="form-group mb-3">
+                                            <label>Student Name</label>
+                                            <input type="text" name="" value="" className="form-control"/>
+                                          </div>
+                                          <div className="form-group mb-3">
+                                            <label>Student Course</label>
+                                            <input type="text" name="" value="" className="form-control"/>
+                                          </div>
+                                          <div className="form-group mb-3">
+                                            <label>Student Mail</label>
+                                            <input type="text" name="" value="" className="form-control"/>
+                                          </div>
+                                          <div className="form-group mb-3">
+                                            <label>Student Phone</label>
+                                            <input type="text" name="" value="" className="form-control"/>
                                           </div>
                                       </form>
                                 </div>
