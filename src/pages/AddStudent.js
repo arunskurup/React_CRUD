@@ -18,19 +18,22 @@ class AddStudent extends Component
                                       <form>
                                           <div className="form-group mb-3">
                                             <label>Student Name</label>
-                                            <input type="text" name="" value="" className="form-control"/>
+                                            <input type="text" name="name" onChange={this.handleInput} value={this.state.name} className="form-control"/>
                                           </div>
                                           <div className="form-group mb-3">
                                             <label>Student Course</label>
-                                            <input type="text" name="" value="" className="form-control"/>
+                                            <input type="text" name="course" onChange={this.handleInput} value={this.state.course} className="form-control"/>
                                           </div>
                                           <div className="form-group mb-3">
                                             <label>Student Mail</label>
-                                            <input type="text" name="" value="" className="form-control"/>
+                                            <input type="text" name="mail" onChange={this.handleInput} value={this.state.mail} className="form-control"/>
                                           </div>
                                           <div className="form-group mb-3">
                                             <label>Student Phone</label>
-                                            <input type="text" name="" value="" className="form-control"/>
+                                            <input type="text" name="phone" onChange={this.handleInput} value={this.state.phone} className="form-control"/>
+                                          </div>
+                                          <div className="form-group mb-3">
+                                            <button type="submit" className="btn btn-primary"> Save Studen</button>
                                           </div>
                                       </form>
                                 </div>
