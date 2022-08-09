@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import {Link} from "react-router-dom";
+import axios from 'axios';
 
 class AddStudent extends Component
 {      
@@ -14,8 +15,9 @@ class AddStudent extends Component
             [e.target.name]:e.target.value
           });
     }
-    saveStudent = (e) =>{
+    saveStudent = async (e) =>{
         e.preventDefault();
+        const res = await axios.post('api/add-student', this.state);
     }
        render(){
             return(
