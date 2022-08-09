@@ -9,6 +9,14 @@ class AddStudent extends Component
         mail: '',
         phone: ''
     }
+    handleInput = (e) => {
+          this.setState({
+            [e.target.name]:e.target.value
+          });
+    }
+    saveStudent = (e) =>{
+        e.preventDefault();
+    }
        render(){
             return(
                <div className="container">
@@ -21,7 +29,7 @@ class AddStudent extends Component
                                        </h4>
                                 </div>
                                 <div className="card-body">
-                                      <form>
+                                      <form onSubmit={this.saveStudent}>
                                           <div className="form-group mb-3">
                                             <label>Student Name</label>
                                             <input type="text" name="name" onChange={this.handleInput} value={this.state.name} className="form-control"/>
